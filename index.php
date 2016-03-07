@@ -17,9 +17,9 @@ class MysqlChangePasswordPlugin extends \RainLoop\Plugins\AbstractPlugin
 		{
 			case 'change-password':
 
-				include_once __DIR__.'/MysqlChangePasswordDriverDriver.php';
+				include_once __DIR__.'/MysqlChangePasswordDriver.php';
 
-				$oProvider = new MysqlChangePasswordDriverDriver();
+				$oProvider = new MysqlChangePasswordDriver();
 				$oProvider->SetAllowedEmails(\strtolower(\trim($this->Config()->Get('plugin', 'allowed_emails', ''))));
 
 				break;
