@@ -6,7 +6,11 @@ If you are using Postfix + Dovecot + MySQL as mail server with virtual users and
 
 ## Installation
 
-Download the repo to your rainloop plugins folder `[rainloop root]/data/_data_/_default_/plugins/`, open `MysqlChangePasswordDriver.php` file to fill your MySQL connection info in $config parameter, save, then it works.
+1. Download the repo to your rainloop plugins folder `[rainloop root]/data/_data_/_default_/plugins/` and name as `mysql-change-password`.
+2. Open `MysqlChangePasswordDriver.php` file to fill your MySQL connection info in $config parameter, save.
+3. Log-in Rainloop admin and enable `mysql-change-password` plugin.
+
+It works.
 
 ## 說明
 
@@ -14,4 +18,6 @@ Download the repo to your rainloop plugins folder `[rainloop root]/data/_data_/_
 
 ## 安裝
 
-下載此 repo 到你的 rainloop plugins 目錄，一般是 `[rainloop root]/data/_data_/_default_/plugins/`，修改 `MysqlChangePasswordDriver.php` 檔案當中的 $config 並填入你的 MySQL 連線資訊，就這樣。
+1. 下載此 repo 到你的 rainloop plugins 目錄，一般是 `[rainloop root]/data/_data_/_default_/plugins/`，並且記得將目錄名稱改為 `mysql-change-password`。
+2. 修改 `MysqlChangePasswordDriver.php` 檔案當中的 $config 並填入你的 MySQL 連線資訊。
+3. 登入 Rainloop admin 並啟用 `mysql-change-password` 此 plugin。
