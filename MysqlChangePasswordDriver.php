@@ -1,6 +1,6 @@
 <?php
 
-class ChangePasswordExampleDriver implements \RainLoop\Providers\ChangePassword\ChangePasswordInterface
+class MysqlChangePasswordDriver implements \RainLoop\Providers\ChangePassword\ChangePasswordInterface
 {
 	/**
 	 * @var string
@@ -40,7 +40,18 @@ class ChangePasswordExampleDriver implements \RainLoop\Providers\ChangePassword\
 	{
 		$bResult = false;
 
-		// TODO
+		$config = array (
+			'host' => '',
+			'user' => '',
+			'pass' => '',
+			'db'   => '',
+			);
+
+    $mysqli = new mysqli ($config['host'], $config['user'], $config['pass'], $config['db']);
+    $result = $mysqli->query ("UPDATE `user` SET `password`='". hash ('SHA256', $sNewPassword) ."' WHERE `email`='". $oAccount->Email () ."'");
+
+    if ($result)
+      $bResult = true;
 
 		return $bResult;
 	}

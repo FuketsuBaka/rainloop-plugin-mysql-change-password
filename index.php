@@ -1,6 +1,6 @@
 <?php
 
-class ChangePasswordExamplePlugin extends \RainLoop\Plugins\AbstractPlugin
+class MysqlChangePasswordPlugin extends \RainLoop\Plugins\AbstractPlugin
 {
 	public function Init()
 	{
@@ -17,9 +17,9 @@ class ChangePasswordExamplePlugin extends \RainLoop\Plugins\AbstractPlugin
 		{
 			case 'change-password':
 
-				include_once __DIR__.'/ChangePasswordExampleDriver.php';
+				include_once __DIR__.'/MysqlChangePasswordDriverDriver.php';
 
-				$oProvider = new ChangePasswordExampleDriver();
+				$oProvider = new MysqlChangePasswordDriverDriver();
 				$oProvider->SetAllowedEmails(\strtolower(\trim($this->Config()->Get('plugin', 'allowed_emails', ''))));
 
 				break;
