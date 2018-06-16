@@ -20,9 +20,8 @@ It works.
 ## 安裝
 
 1. 下載此 repo 到你的 rainloop plugins 目錄，一般是 `[rainloop root]/data/_data_/_default_/plugins/`，並且記得將目錄名稱改為 `mysql-change-password`。
-//2. 修改 `MysqlChangePasswordDriver.php` 檔案當中的 $config 並填入你的 MySQL 連線資訊。
-//3. 登入 Rainloop admin 並啟用 `mysql-change-password` 此 plugin。
-// Someone pls translate to chinese.
+- deprecated 2. 修改 `MysqlChangePasswordDriver.php` 檔案當中的 $config 並填入你的 MySQL 連線資訊。
+- deprecated 3. 登入 Rainloop admin 並啟用 `mysql-change-password` 此 plugin。
 2. Log-in to Rainloop admin panel and navigate to plugins tab.
 3. Click on `mysql-change-password` plugin to open plugin settings. Fill the forms with your configration and press `Save`. 
 4. Enable `mysql-change-password` plugin.
